@@ -5,7 +5,6 @@ const btnWhite = document.querySelectorAll(".btn__white.showed");
 
 window.addEventListener('scroll', function() {
 	let scrollPos = window.scrollY;
-	console.log(scrollPos);
 
 	if (scrollPos > 800 && scrollPos < 1300) {
 		for (btns of btnDark) {
@@ -21,7 +20,6 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener('scroll', function() {
 	let scrollPos = window.scrollY;
-	console.log(scrollPos);
 
 	if (scrollPos > 1200 && scrollPos < 1500) {
 		for (btns of btnWhite) {
@@ -37,7 +35,6 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener('scroll', function() {
 	let scrollPos = window.scrollY;
-	console.log(scrollPos);
 
 	if (scrollPos > 1600 && scrollPos < 2000) {
 		for (btns of btnDark__2) {
@@ -53,7 +50,6 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener('scroll', function() {
 	let scrollPos = window.scrollY;
-	console.log(scrollPos);
 
 	if (scrollPos > 2200 && scrollPos < 2500) {
 		for (btns of btnDark__3) {
