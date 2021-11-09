@@ -1,64 +1,35 @@
-const btnDark = document.querySelectorAll(".btn__dark.showed");
-const btnDark__2 = document.querySelectorAll(".btn__dark.showed__2");
-const btnDark__3 = document.querySelectorAll(".btn__dark.showed__3");
-const btnWhite = document.querySelectorAll(".btn__white.showed");
+const btnDark = document.querySelectorAll(".btn.btn__showed");
+
+var arr1= [800, 1200, 1600, 2200];
+var arr2= [1300, 1500, 2000, 2500];
 
 window.addEventListener('scroll', function() {
 	let scrollPos = window.scrollY;
 
-	if (scrollPos > 800 && scrollPos < 1300) {
-		for (btns of btnDark) {
-			btns.classList.add('btn__dark--show');
-		}
+	if (scrollPos > arr1[0] && scrollPos < arr2[0]) {
+		btnDark[0].classList.add('btn__dark_show');
+		
 	} else {
-		for (btns of btnDark) {
-			btns.classList.remove('btn__dark--show');
-		}
+		btnDark[0].classList.remove('btn__dark_show');
 	}
-	
-});
 
-window.addEventListener('scroll', function() {
-	let scrollPos = window.scrollY;
-
-	if (scrollPos > 1200 && scrollPos < 1500) {
-		for (btns of btnWhite) {
-			btns.classList.add('btn__dark--show');
-		}
+	if (scrollPos > arr1[1] && scrollPos < arr2[1]) {
+		btnDark[1].classList.add('btn__dark_show');
+		
 	} else {
-		for (btns of btnWhite) {
-			btns.classList.remove('btn__dark--show');
-		}
+		btnDark[1].classList.remove('btn__dark_show');
 	}
-	
-});
 
-window.addEventListener('scroll', function() {
-	let scrollPos = window.scrollY;
-
-	if (scrollPos > 1600 && scrollPos < 2000) {
-		for (btns of btnDark__2) {
-			btns.classList.add('btn__dark--show');
-		}
+	if (scrollPos > arr1[2] && scrollPos < arr2[2]) {
+		btnDark[2].classList.add('btn__dark_show');
 	} else {
-		for (btns of btnDark__2) {
-			btns.classList.remove('btn__dark--show');
-		}
+		btnDark[2].classList.remove('btn__dark_show');
 	}
-	
-});
 
-window.addEventListener('scroll', function() {
-	let scrollPos = window.scrollY;
-
-	if (scrollPos > 2200 && scrollPos < 2500) {
-		for (btns of btnDark__3) {
-			btns.classList.add('btn__dark--show');
-		}
+	if (scrollPos > arr1[3] && scrollPos < arr2[3]) {
+		btnDark[3].classList.add('btn__dark_show');
 	} else {
-		for (btns of btnDark__3) {
-			btns.classList.remove('btn__dark--show');
-		}
+		btnDark[3].classList.remove('btn__dark_show');
 	}
 	
 });

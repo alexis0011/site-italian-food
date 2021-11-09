@@ -1,10 +1,6 @@
 body {
 	margin: 0;
-
-	/*font-family: 'Montserrat', sans-serif;*/
-	font-family: 'Open Sans', sans-serif;
-	/*font-family: 'Reenie Beanie', cursive;*/
-	
+	font-family: 'Open Sans', sans-serif;	
 }
 
 *,
@@ -27,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0 15px;
 }
 
-.container--dark {
+.container__small {
 	max-width: 1060px;
 }
 
@@ -133,20 +129,24 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*==============  button  =============*/
-.btn__white {
+.btn {
 	margin-bottom: 20px;
+
 	width: 220px;
 	height: 50px;
 	border-radius: 25px;
 	border: 0;
 
-	background: #eee;
 	font-size: 25px;
 	font-weight: 800;
 	text-transform: uppercase;
-	color: #333;
 
 	cursor: pointer;
+}
+
+.btn__white {
+	background: #eee;
+	color: #333;
 }
 
 .btn__white:hover {
@@ -154,16 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn__dark {
-	margin-bottom: 20px;
-	width: 220px;
-	height: 50px;
-	border-radius: 25px;
-	border: 0;
-
 	background: #343434;
-	font-size: 25px;
-	font-weight: 800;
-	text-transform: uppercase;
 	color: #fff;
 }
 
@@ -172,22 +163,12 @@ h1, h2, h3, h4, h5, h6 {
 	cursor: pointer;
 }
 
-.showed {
+.btn__showed {
 	opacity: 0;
 	transition: opacity 0.5s linear;
 }
 
-.showed__2 {
-	opacity: 0;
-	transition: opacity 0.5s linear;
-}
-
-.showed__3 {
-	opacity: 0;
-	transition: opacity 0.5s linear;
-}
-
-.btn__dark--form {
+.btn__dark_form {
 	background: #54524f;
 	position: absolute;
 	top: 0;
@@ -195,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 2;
 }
 
-.btn__dark--show {
+.btn__dark_show {
 	opacity: 1;
 }
 
@@ -207,15 +188,15 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-.section--dish {
+.section__dish {
 	background: #fff;
 }
 
-.section--dark {
+.section__dark {
 	background: #27292c;
 }
 
-.section--block {
+.section__block {
 	background: url("img/Background.png") center no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -238,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 10px;
 }
 
-.section__font--white {
+.section__font_white {
 	color: #fff;
 }
 
@@ -525,7 +506,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 16px;
 }
 
-.footer__item--text {
+.footer__item_text {
 	width: 460px;
 }
 
